@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  background-color: #4b5563ed;
+}
+
+@media (max-width: 768px) {
+  .active {
+    background-color: transparent;
+  }
+}
