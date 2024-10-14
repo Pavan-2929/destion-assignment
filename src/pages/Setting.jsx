@@ -25,7 +25,7 @@ const Setting = () => {
   return (
     <div>
       <h1 className="text-3xl font-bold mb-6">Settings</h1>
-
+      {/* Notification */}
       <div className="bg-white shadow-md rounded-lg p-6 mb-6">
         <h2 className="text-xl font-semibold mb-4">Notification Settings</h2>
         <div className="flex items-center mb-4">

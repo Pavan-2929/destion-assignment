@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  FaUser,
-  FaChartLine,
-  FaClipboardList,
-  FaBell,
-  FaDollarSign,
-} from "react-icons/fa";
+import { FaUser, FaClipboardList, FaBell, FaDollarSign } from "react-icons/fa";
 
 const dummyData = [
   {
@@ -52,6 +46,7 @@ const recentActivities = [
 const Dashboard = () => {
   return (
     <div>
+      {/* Title */}
       <header className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold">Dashboard</h1>
         <div className="relative">
@@ -61,7 +56,7 @@ const Dashboard = () => {
           </span>
         </div>
       </header>
-
+      {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         {dummyData.map((item) => (
           <div
@@ -76,7 +71,7 @@ const Dashboard = () => {
           </div>
         ))}
       </div>
-
+      {/* Recent-Activites */}
       <div className="bg-white shadow-md rounded-lg p-6 mb-6">
         <h2 className="text-xl font-semibold mb-4">Recent Activities</h2>
         <ul className="list-disc pl-5">

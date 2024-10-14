@@ -59,10 +59,12 @@ const Signup = () => {
   return (
     <div className="bg-gray-900 min-h-screen flex items-center justify-center p-3 md:p-5">
       <div className="max-w-md w-full bg-gray-800 p-4 md:p-8 rounded-lg shadow-lg">
+        {/* Title */}
         <h2 className="text-3xl font-bold text-center text-gray-100 mb-6">
           Create Account
         </h2>
         <form onSubmit={handleSignUp}>
+          {/* username */}
           <div className="mb-4">
             <label
               htmlFor="username"
@@ -80,7 +82,7 @@ const Signup = () => {
               required
             />
           </div>
-
+          {/* email */}
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm text-gray-400 mb-2">
               Email
@@ -95,7 +97,7 @@ const Signup = () => {
               required
             />
           </div>
-
+          {/* password */}
           <div className="mb-4">
             <label
               htmlFor="password"
@@ -113,7 +115,7 @@ const Signup = () => {
               required
             />
           </div>
-
+          {/* confirm-password */}
           <div className="mb-10">
             <label
               htmlFor="repeatPassword"
@@ -131,7 +133,7 @@ const Signup = () => {
               required
             />
           </div>
-
+          {/* Form-button */}
           <button
             type="submit"
             className="w-full py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition duration-300 flex items-center justify-center"
@@ -139,7 +141,7 @@ const Signup = () => {
             {loading ? "Loading..." : "Sign Up"}
           </button>
         </form>
-
+        {/* Login Link */}
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-400">
             Already have an account?{" "}

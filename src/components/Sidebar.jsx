@@ -9,9 +9,11 @@ const Sidebar = () => {
 
   return (
     <>
+      {/* Large Screen Sidebar */}
       <div className="hidden md:block">
         <div className="flex">
           <div className="min-h-screen bg-gray-700 w-[18vw] text-white space-y-8 text-xl font-bold py-6">
+            {/* Left-Side Navigation */}
             <div className="space-y-2">
               <NavLink
                 to="/"
@@ -36,14 +38,16 @@ const Sidebar = () => {
               </NavLink>
             </div>
           </div>
-
           <div className="bg-white min-h-screen min-w-[82vw]">
+            {/* Header  */}
             <div className="flex h-[10vh]  justify-between items-center px-10 py-4 bg-gray-200 border-b border-gray-500">
               <p className="text-2xl font-bold">Assignment</p>
               <p className="font-bold text-zinc-700">
                 Logged In as @{user && user.username}
               </p>
             </div>
+            {/* Protected Pages */}
+
             <div className="px-10 bg-gray-200 h-[90vh] py-8">
               <Outlet />
             </div>
@@ -51,11 +55,14 @@ const Sidebar = () => {
         </div>
       </div>
 
+      {/* Small Screen Sidebar */}
       <div className="md:hidden block relative">
+        {/* Header  */}
         <div className="flex h-[10vh] w-[100vw] justify-between items-center px-4 py-4 bg-gray-200 border-b border-gray-500">
           <p className="text-2xl font-bold">Assignment</p>
           <p className="font-bold text-zinc-700">@{user && user.username}</p>
         </div>
+        {/* Left-Side Navigation */}
         <div className="md:hidden fixed bottom-0 left-0 w-full bg-gray-400 border-t border-gray-500 flex justify-around items-center py-3 shadow-md">
           <NavLink to="/" className="flex flex-col items-center">
             <GrDashboard className="text-xl" />
@@ -67,6 +74,7 @@ const Sidebar = () => {
             <CgProfile className="text-xl" />
           </NavLink>
         </div>
+        {/* Protected Pages */}
         <div className="px-4 bg-gray-200 pb-20 py-8">
           <Outlet />
         </div>

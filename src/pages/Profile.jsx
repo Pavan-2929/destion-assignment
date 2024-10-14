@@ -19,6 +19,7 @@ const Profile = () => {
 
   return (
     <div>
+      {/* Title */}
       <div className="flex items-center justify-between mb-10">
         <h1 className="text-3xl font-bold">Profile</h1>
         <button
@@ -28,7 +29,7 @@ const Profile = () => {
           Logout
         </button>
       </div>
-
+      {/* About-Me */}
       <div className="bg-white shadow-md rounded-lg p-6 mb-6">
         <h2 className="text-xl font-semibold mb-4">About Me</h2>
         <textarea
@@ -39,7 +40,7 @@ const Profile = () => {
           placeholder="Tell us about yourself..."
         />
       </div>
-
+      {/* Account Setting */}
       <div className="bg-white shadow-md rounded-lg p-6 mb-6">
         <h2 className="text-xl font-semibold mb-4">Account Settings</h2>
         <div className="mb-4">
